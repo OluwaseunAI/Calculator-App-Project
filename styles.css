@@ -1,0 +1,156 @@
+@import url('https://fonts.cdnfonts.com/css/led-digital-7');
+@import url('https://fonts.cdnfonts.com/css/digital-7-mono');
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+
+body{
+    background: rgb(48, 48, 48);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'LED Digital 7', sans-serif;
+    font-family: 'digital-7 Mono', sans-serif;
+    font-family: 'Product Sans Black', sans-serif;
+}
+
+/* .edges{
+  border: 1px solid;
+  height: 200%;
+  width: 100%;
+} */
+
+.table-container {
+    position: relative;
+    width: 300px;
+    bottom: -20%;
+    background: #FEFEFE;
+    margin: 0 auto;
+    overflow: visible;
+    padding-bottom: 7px;
+    height: 430px;
+}
+
+.table-container table{
+    background: rgb(97, 97, 104);
+    width: 300px;
+    height: 100%;
+}
+
+/* .table-container::before,
+.table-container::after {
+    content:''
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-right: 0px;
+    left: 0;
+    right: 0;
+    border: 1px solid;
+} */
+
+.table-container::before {
+    border-radius: 18px;
+    background: rgb(97, 97, 104);
+}
+
+table {
+    /* background: #FEFEFE; */
+    padding: 12px 12px;
+    border-top: none;
+    border-right: none;
+    margin: auto;
+    height: 100%
+
+    /*         box-shadow: 0px 7px rgb(81, 82, 89); */
+}
+/* table{
+  width:100%;
+  padding: 12px 12px;
+} */
+.body-output {
+    position: relative;
+    /* background: rgb(97, 97, 104); */
+    padding: 30px 18px;
+    height: 100%;
+    border-radius: 29px;
+    /*   margin-top: 10px; */
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    box-shadow: 0px 7px rgb(81, 82, 89);
+}
+
+/* .calcbody{
+    padding-top: 10px;
+    margin-top: 10px;
+} */
+
+.output{
+    height: 55px;
+    border-radius: 6px;
+    text-align: right;
+    /* background: #CFD5E0; */
+    border: none;
+    padding-bottom: 0;
+    width: 100%;
+    margin-right: 15px;
+    box-shadow: 0 5px #c2c7d3;
+    margin-bottom: 25px;
+    font: bold 20px 'LED Digital 7', sans-serif ;
+    /*margin-top: 30px;*/
+}
+
+.table-rows td button, .table-row td button{
+    background: #FEFEFE;
+    border-radius: 6px;
+    font: bold 40px Arial;
+    color: rgb(54, 52, 52);
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 1000;
+    width: 100%;
+    height: 80%;
+    word-spacing: 0px;
+    cursor: pointer;
+    text-align: center;
+    pointer-events: all;
+}
+
+
+.table-rows td .one, #orange-equal-to, #longer-minus{
+    margin-bottom: 6px;
+}
+
+
+.table-rows td{
+    padding-right: 7px;
+    padding-bottom: 3px;
+}
+
+td{
+    border: none;
+}
+
+/*input*/ .one{
+              width: 100%;
+              background: #FEFEFE;
+              border: none;
+              box-shadow: 1.2px 3.5px rgb(227, 228, 229);
+          }
+
+#orange-equal-to{
+    background: #f89734;
+    box-shadow: 1.2px 3.5px rgb(222, 131, 57);
+    border: none;
+    width: 100%;
+    position: relative;
+}
+
+/* */
+
+input[placeholder="0"] {
+    font: bold 40px 'LED Digital 7', sans-serif;
+    /*font-family: 'digital-7 Mono', sans-serif;*/
+    font-weight: 200;
+
+}
