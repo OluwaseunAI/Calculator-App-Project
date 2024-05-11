@@ -68,7 +68,7 @@ for (let i = 0; i < buttons.length; i++){
 let bttn = document.querySelectorAll('.one');
 let change = document.getElementById('output');
 
-for (let i = 0; i < buttons.length; i++){
+for (let i = 0; i < bttn.length; i++){
     bttn[i].addEventListener("click", function(event){
         let clickedBtn = event.target;
 
@@ -82,6 +82,28 @@ for (let i = 0; i < buttons.length; i++){
 
         } else {
             return;
+        }
+    });
+}
+
+
+let bttnSize = document.querySelectorAll('.one');
+let changeSize = document.getElementById('output');
+
+for (let i = 0; i < bttnSize.length; i++){
+    bttnSize[i].addEventListener("click", function(event){
+        let outputLength = changeSize.value.length;
+
+        if (outputLength >= 11 && outputLength < 20) {
+            changeSize.style.fontSize = '25px';
+            changeSize.style.fontFamily = "'digital-7 Mono', sans-serif";
+
+        } else if (outputLength >= 20 && (outputLength < 35)) {
+            changeSize.style.fontSize = '20px';
+            changeSize.style.fontFamily = "'digital-7 Mono', sans-serif";
+        } else {
+            changeSize.style.fontSize = '40px';
+            changeSize.style.fontFamily = "'digital-7 Mono', sans-serif";
         }
     });
 }
